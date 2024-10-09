@@ -1,16 +1,25 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
 
-<!--
-**franceva/franceva** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    <body>
+        <h1> HTML forms</h1>
+        <form>
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username">
+             <br><br>
 
-Here are some ideas to get you started:
+            <label for="email">Enter email:</label>
+            <input type="text" id="email">
+             <br><br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+            <label for="password"> Enter password:</label>
+            <input type="text" id="password" name=password>
+            <br><br>
+
+        </form>
+
+    </body>
+</html>
