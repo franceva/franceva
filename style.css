@@ -1,0 +1,73 @@
+/* Ensure body and html are full height */
+body, html {
+    height: 100%; /* Make the page take full height */
+    margin: 0; /* Remove default margin */
+    position: relative; /* So we can manipulate z-index if needed */
+}
+
+/* Background image styling */
+body {
+    background-image: url('https://car-images.bauersecure.com/pagefiles/102566/volvoxc40.jpg');
+    background-size: cover; /* Makes the image cover the full viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark overlay to make content (like the footer) visible */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Behind all content */
+}
+
+/* Footer styling */
+footer {
+    position: relative; /* Ensures it stays in the document flow */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: #343a40; /* Footer background color */
+    color: white; /* Text color */
+    z-index: 10; /* Above the background image */
+}
+
+/* Footer content alignment */
+footer .col-md-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation links in footer */
+footer .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .nav li {
+    display: inline-block;
+}
+
+footer .nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer .nav a:hover {
+    color: #fff;
+}
+
+footer .text-body-secondary {
+    color: #6c757d;
+}
+
+footer .bi {
+    color: #6c757d; /* Icons color */
+}
